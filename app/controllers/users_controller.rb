@@ -22,9 +22,7 @@ class UsersController < ApplicationController
       redirect_to user_path(@user.id)
       flash[:notice] = "You have updated user successfully."
     else
-      @books = @user.books
-      @book = Book.new
-      render :show
+      render :edit
     end
   end
 
