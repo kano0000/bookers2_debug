@@ -30,11 +30,9 @@
         </tr>
       </table>
      <div id="comment_index">
-       <%= render "book_comments/index", book: @book%>
+       <%= render "book_comments/index", book: @book %>
      </div>
-     <div id="comment_textarea">
       <%= render "book_comments/form", book: @book, book_comment: @book_comment %>
-     </div>
     </div>
   </div>
 </div>
